@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Currency Convertor</title>
+  </head>
+  <body>
+    <div class="converter">
+      <h2>Currency Convertor</h2>
+      <div class="input-group">
+        <label for="fromCurrency">From: </label>
+        <select id="fromCurrency">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="INR">INR</option>
+        </select>
+        <input type="number" id="amount" placeholder="Amount" />
+      </div>
+      <div class="input-group">
+        <label for="toCurrency">To: </label>
+        <select id="toCurrency">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="INR">INR</option>
+        </select>
+      </div>
+      <button onclick="convertCurrency()">Convert</button>
+      <p id="result"></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
